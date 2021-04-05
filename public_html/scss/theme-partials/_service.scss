@@ -1,4 +1,6 @@
 $service-text: $gray-900;
+$dark-services-bg: $dark-blue;
+
 .service-section{
     padding: 77px 0 80px;
     
@@ -10,6 +12,28 @@ $service-text: $gray-900;
         margin-bottom: 2.7rem;
         span{
             color: $service-text;
+        }
+    }
+    
+    &.dark-service-section{ /* posto smo gore defininisali service-section za globalni deo
+                            a potom cemo ovde reci ukoliko ovaj service-section ima jos i klasu 
+                            .dark-service-section onda ta sekcija treba da ima background-color:$dark-service-bg
+                            */
+        background-color: $dark-services-bg; 
+        h2{
+            color: $primary;
+        }
+        .read-more{
+            font-weight: $font-weight-medium;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+        
+        .service-item-description{
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            height: 3*2.5rem;
+            overflow: hidden;
         }
     }
 }

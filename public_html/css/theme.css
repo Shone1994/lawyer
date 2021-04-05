@@ -9861,6 +9861,27 @@ header .navbar-nav a {
 .service-section .service-item span {
   color: #1E1E1E;
 }
+.service-section.dark-service-section {
+  /* posto smo gore defininisali service-section za globalni deo
+  a potom cemo ovde reci ukoliko ovaj service-section ima jos i klasu 
+  .dark-service-section onda ta sekcija treba da ima background-color:$dark-service-bg
+  */
+  background-color: #11284B;
+}
+.service-section.dark-service-section h2 {
+  color: #1A77CD;
+}
+.service-section.dark-service-section .read-more {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+.service-section.dark-service-section .service-item-description {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  height: 7.5rem;
+  overflow: hidden;
+}
 
 .team-section {
   padding: 67px 0 61px;
